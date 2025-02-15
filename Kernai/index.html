@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="Sopr">
+    <!-- Mobile Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+    
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <!-- Top Logo/Brand -->
+      <div class="sidebar__brand">
+        <h2>Hajiri</h2>
+      </div>
+    
+      <!-- Main Navigation Menu -->
+      <nav class="sidebar__nav">
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <span class="icon">🏠</span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <p class="sidebar__section-title">PEOPLE</p>
+          <li>
+            <a href="#">
+              <span class="icon">👤</span>
+              <span>Employee</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">👥</span>
+              <span>Team</span>
+            </a>
+          </li>
+          <p class="sidebar__section-title">MANAGEMENT</p>
+          <li>
+            <a href="#">
+              <span class="icon">✅</span>
+              <span>Attendance</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">🍃</span>
+              <span>Leaves</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">💳</span>
+              <span>Expense</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">💼</span>
+              <span>Assets</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">📊</span>
+              <span>Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">⭐</span>
+              <span>Super Coins</span>
+            </a>
+          </li>
+          <p class="sidebar__section-title">PAYROLL</p>
+          <li>
+            <a href="#">
+              <span class="icon">📋</span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">💸</span>
+              <span>EPF, ESI & TDS</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">📝</span>
+              <span>Generate Salary Slip</span>
+            </a>
+          </li>
+          <p class="sidebar__section-title">COMPANY</p>
+          <li>
+            <a href="#">
+              <span class="icon">🏢</span>
+              <span>Company Setting</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">📅</span>
+              <span>Attendance Setting</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">🌴</span>
+              <span>Leave Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">💰</span>
+              <span>Salary Setting</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    
+      <!-- SIDEBAR FOOTER -->
+      <div class="sidebar__footer">
+        <div class="sidebar__premium">
+          <span class="premium-label">Premium</span>
+          <span class="premium-validity">valid up to 12 months</span>
+        </div>
+        <button class="sidebar__modify">Modify</button>
+    
+        <!-- User Info -->
+        <div class="sidebar__user">
+          <div class="user-avatar">H</div>
+          <div class="user-email">hajiri0852@gmail.com</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <header class="header">
+        <div class="header__left">
+          <h1 class="header__title">Expense Management</h1>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Expense Request</a></li>
+              <li><a href="#">Company Expense Policy</a></li>
+              <li><a href="#">Company Wallet</a></li>
+            </ul>
+          </nav>  
+        </div>
+        <div class="header__right">
+          <span>My Inbox</span>
+          <button class="sidebar__modify">Logout</button>
+        </div>
+      </header>
+
+      <main class="container">
+        <!-- TOP CARDS ROW -->
+        <section class="cards-row">
+          <div class="card">
+            <p class="card__title">Total Expense</p>
+            <p class="card__value">₹1,24,420</p>
+          </div>
+          <div class="card">
+            <p class="card__title">Unsettled Expense</p>
+            <p class="card__value">₹34,420</p>
+          </div>
+          <div class="card">
+            <p class="card__title">Unpaid Expense</p>
+            <p class="card__value">₹72,100</p>
+          </div>
+          <div class="card">
+            <p class="card__title">Paid Expense</p>
+            <p class="card__value">₹1,24,420</p>
+          </div>
+          <div class="card">
+            <p class="card__title">Reimbursed</p>
+            <p class="card__value">₹1,240</p>
+          </div>
+          <div class="card">
+            <p class="card__title">N/A</p>
+            <p class="card__value">--</p>
+          </div>
+        </section>
+    
+        <!-- DASHBOARD SECTIONS -->
+        <section class="dashboard">
+          <!-- LEFT COLUMN: Wallet Details -->
+          <div class="dashboard__column dashboard__column--left">
+            <h2 class="section-title">Wallet Details</h2>
+            <div class="wallet-details">
+              <p class="wallet-details__title">Company Wallet</p>
+              <h3 class="wallet-details__balance">₹16,05,894</h3>
+              <p class="wallet-details__sub">Available: ₹10,95,894</p>
+            </div>
+    
+            <div class="transactions-list">
+              <h3>Employee Reimbursement</h3>
+              <ul>
+                <li>
+                  <span>John Doe</span>
+                  <span>₹5,000</span>
+                </li>
+                <li>
+                  <span>Jane Smith</span>
+                  <span>₹8,200</span>
+                </li>
+                <li>
+                  <span>Sam Wilson</span>
+                  <span>₹3,500</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- MIDDLE COLUMN: Categories -->
+          <div class="dashboard__column dashboard__column--center">
+            <h2 class="section-title">Categories (Week 1)</h2>
+            <div class="categories-card">
+              <h3>Top 10 Expense</h3>
+              <ul class="category-list">
+                <li>
+                  <span>Travel & Transportation</span>
+                  <span>25%</span>
+                </li>
+                <li>
+                  <span>Food & Dining</span>
+                  <span>12%</span>
+                </li>
+                <li>
+                  <span>Client Engagement & Entertainment</span>
+                  <span>11%</span>
+                </li>
+                <li>
+                  <span>Training & Development</span>
+                  <span>9%</span>
+                </li>
+                <li>
+                  <span>Office Supplies & Equipment</span>
+                  <span>7%</span>
+                </li>
+              </ul>
+              <div class="categories-card__chart">
+                <p>Chart Placeholder</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- RIGHT COLUMN: Client Project -->
+          <div class="dashboard__column dashboard__column--right">
+            <h2 class="section-title">Client Project</h2>
+            <div class="client-project">
+              <div class="client-project__item">
+                <div class="client-project__info">
+                  <strong>Websta</strong>
+                  <span>₹56,240</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar__fill" style="width: 75%;"></div>
+                </div>
+                <p>75% used</p>
+              </div>
+              <div class="client-project__item">
+                <div class="client-project__info">
+                  <strong>Websta 2</strong>
+                  <span>₹26,000</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar__fill" style="width: 50%;"></div>
+                </div>
+                <p>50% used</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Employee Wallet Transactions Section -->
+        <section class="wallet-transactions">
+          <div class="transaction-card">
+            <h3>Employee Wallet Transactions</h3>
+            <div class="transaction-row">
+              <div class="transaction-info">
+                <img src="https://via.placeholder.com/40" alt="Avatar">
+                <div>
+                  <div class="transaction-name">Eleanor Pena</div>
+                  <div class="transaction-dept">Sales Department</div>
+                </div>
+              </div>
+              <div class="transaction-amount">
+                <div>₹10,894</div>
+                <div class="transaction-date">Jan,23</div>
+              </div>
+            </div>
+            <div class="transaction-row">
+              <div class="transaction-info">
+                <img src="https://via.placeholder.com/40" alt="Avatar">
+                <div>
+                  <div class="transaction-name">Eleanor Pena</div>
+                  <div class="transaction-dept">IT Department</div>
+                </div>
+              </div>
+              <div class="transaction-amount">
+                <div>₹9,894</div>
+                <div class="transaction-date">Jan,23</div>
+              </div>
+            </div>
+            <div class="transaction-row">
+              <div class="transaction-info">
+                <img src="https://via.placeholder.com/40" alt="Avatar">
+                <div>
+                  <div class="transaction-name">Eleanor Pena</div>
+                  <div class="transaction-dept">Relation Manager</div>
+                </div>
+              </div>
+              <div class="transaction-amount">
+                <div>₹8,894</div>
+                <div class="transaction-date">Jan,23</div>
+              </div>
+            </div>
+            <div class="transaction-row">
+              <div class="transaction-info">
+                <img src="https://via.placeholder.com/40" alt="Avatar">
+                <div>
+                  <div class="transaction-name">Eleanor Pena</div>
+                  <div class="transaction-dept">Sales Department</div>
+                </div>
+              </div>
+              <div class="transaction-amount">
+                <div>₹12,894</div>
+                <div class="transaction-date">Jan,23</div>
+              </div>
+            </div>
+            <div class="transaction-row">
+              <div class="transaction-info">
+                <img src="https://via.placeholder.com/40" alt="Avatar">
+                <div>
+                  <div class="transaction-name">Eleanor Pena</div>
+                  <div class="transaction-dept">Software Develop</div>
+                </div>
+              </div>
+              <div class="transaction-amount">
+                <div>₹11,894</div>
+                <div class="transaction-date">Jan,23</div>
+              </div>
+            </div>
+            <div class="transaction-row">
+              <div class="transaction-info">
+                <img src="https://via.placeholder.com/40" alt="Avatar">
+                <div>
+                  <div class="transaction-name">Eleanor Pena</div>
+                  <div class="transaction-dept">Software Develop</div>
+                </div>
+              </div>
+              <div class="transaction-amount">
+                <div>₹27,894</div>
+                <div class="transaction-date">Jan,23</div>
+              </div>
+            </div>
+            <button class="view-all">See all Transactions</button>
+          </div>
+        </section>
+        
+        <!-- Categories Section -->
+        <section class="categories-section">
+          <div class="categories-container">
+            <h3 class="categories-title">Categories</h3>
+            <div class="types-info">
+              <strong>10 Types Of Expense</strong>
+              <span>Defined By Your Organisation</span>
+            </div>
+            <div class="categories-content">
+              <!-- Category List -->
+              <div class="categories-list">
+                <div class="cat-item">
+                  <span class="cat-dot" style="background-color:#FF5C5C"></span>
+                  <span>Travel & Transportation (20%)</span>
+                  <span>₹80,240</span>
+                </div>
+                <div class="cat-item">
+                  <span class="cat-dot" style="background-color:#FFA726"></span>
+                  <span>Employee Reimbursements (18%)</span>
+                  <span>₹23,240</span>
+                </div>
+                <div class="cat-item">
+                  <span class="cat-dot" style="background-color:#3F51B5"></span>
+                  <span>Office & Administration (11%)</span>
+                  <span>₹13,240</span>
+                </div>
+                <div class="cat-item">
+                  <span class="cat-dot" style="background-color:#9C27B0"></span>
+                  <span>Client Engagement & Entertainment (9%)</span>
+                  <span>₹11,240</span>
+                </div>
+                <div class="cat-item">
+                  <span class="cat-dot" style="background-color:#4CAF50"></span>
+                  <span>Training & Development (8%)</span>
+                  <span>₹8,240</span>
+                </div>
+                <div class="cat-item">
+                  <span class="cat-dot" style="background-color:#FF9800"></span>
+                  <span>Professional Fees (10%)</span>
+                  <span>₹20,240</span>
+                </div>
+                <div class="cat-item">
+                  <span class="cat-dot" style="background-color:#009688"></span>
+                  <span>IT & Software (10%)</span>
+                  <span>₹40,240</span>
+                </div>
+                <div class="cat-item">
+                  <span class="cat-dot" style="background-color:#E91E63"></span>
+                  <span>Miscellaneous Expenses (6%)</span>
+                  <span>₹50,240</span>
+                </div>
+              </div>
+              <!-- Chart / Percentage Placeholder -->
+              <div class="categories-chart">
+                <div class="chart-percentage">%</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- BOTTOM SECTION: Departmental Budget Allocation -->
+        <section class="bottom-section">
+          <h2 class="section-title">Departmental Budget Allocation</h2>
+          <div class="bottom-cards">
+            <div class="bottom-card">
+              <p>HR Department</p>
+              <h3>₹40,220</h3>
+            </div>
+            <div class="bottom-card">
+              <p>IT Department</p>
+              <h3>₹90,500</h3>
+            </div>
+            <div class="bottom-card">
+              <p>Marketing</p>
+              <h3>₹72,100</h3>
+            </div>
+            <div class="bottom-card">
+              <p>Sales</p>
+              <h3>₹1,24,420</h3>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
